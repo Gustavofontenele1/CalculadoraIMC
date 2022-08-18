@@ -80,35 +80,3 @@ function setResultado(msg, isValid) {
   paragrafo.innerHTML = msg;
   resultadoImc.appendChild(paragrafo);
 }
-
-// function imc() {
-//     const form = document.querySelector('.form');
-//     function calculoImc (event) {
-//         event.preventDefault();
-//         const peso = document.querySelector('#peso')
-//         const altura = document.querySelector('#altura')
-//         const resultado = document.querySelector('.resultado')
-
-//         const resultadoImc = (peso.value) / (altura.value * altura.value);
-//         if (resultadoImc < 18.5) {
-//             resultado.innerHTML += `<p>${resultadoImc.toFixed(2)}, Abaixo do peso. </p>`
-
-//         }else if (resultadoImc >= 18.5 && resultadoImc <= 24.9) {
-//             resultado.innerHTML += `<p>Seu IMC é ${resultadoImc.toFixed(2)}, (Peso normal). </p>`
-//         }else if (resultadoImc >= 25 && resultadoImc <= 29.9) {
-//             resultado.innerHTML += `<p>Seu IMC é ${resultadoImc.toFixed(2)}, (Sobrepeso). </p>`
-//         }else if (resultadoImc >= 30 && resultadoImc <= 34.9) {
-//             resultado.innerHTML += `<p>Seu IMC é ${resultadoImc.toFixed(2)}, (Obesidade grau 1). </p>`
-//         }else if (resultadoImc >= 35 && resultadoImc <= 39.9) {
-//             resultado.innerHTML += `<p>Seu IMC é ${resultadoImc.toFixed(2)}, (Obesidade grau 2). </p>`
-//         }else if (resultadoImc > 40) {
-//             resultado.innerHTML += `<p>Seu IMC é ${resultadoImc}, (Obesidade grau 3). </p>`
-//         }else {
-//             resultado.innerHTML += `<p>Conta inválida. </p>`
-//         }
-
-//     }
-//     form.addEventListener('submit', calculoImc);
-// }
-
-// imc();
